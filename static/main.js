@@ -111,7 +111,7 @@ function main() {
                         console.log(`Пользователь создан`);
                         son.transferMoney({to: father.username, amount: targetAmount}, (err, data) => {
                           if (err) {
-                            console.log(`Перевод выполнен`);
+                            console.log(`Перевод не выполнен`);
                           } else {
                             console.log(`Пользователь ${father.username} получил ${targetAmount} Неткоинов`);
                           }
